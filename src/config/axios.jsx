@@ -1,7 +1,7 @@
 import axios from 'axios'
-
+const url = import.meta.env.VITE_BACKEND_URL
 const clienteAxios = axios.create({
-    baseURL: `http://localhost:4000/api`
+        baseURL: `${url}`
 })
 
 export default clienteAxios
